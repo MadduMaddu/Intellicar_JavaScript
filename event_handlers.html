@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Event Handlers</title>
+        <style>
+            .container{
+                background-color: aqua;
+                display:flex;
+                flex-direction: row;
+                justify-content: center;
+                height: 100px;
+            }
+            .box{
+                border: 5px solid brown;
+                padding: 10px;
+                margin: 10px;
+                width: 100px;
+                color: brown;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="res"></h1>
+        <div class="container" id="container">
+            <div class="box" id="box1" onclick="onClick()">box-1</div>
+            <div class="box" id="box2" onmouseover="mouseOver()">box-2</div>
+            <div class="box" id="box3">box-3</div>
+            <div class="box" id="box4">b0x-4</div>
+        </div>
+        <form>
+            <input type="text" id="text1" onkeyup="keyUp()" onkeydown="keyDown()" onkeypress="keyPress()"/>
+            <button id="myButton">Click Me</button>
+<script>
+  const button = document.getElementById('myButton');
+  button.onclick = function() {
+    alert('Button clicked!');
+  };
+</script>
+
+        </form>
+        <script src="event_handlers.js"></script>
+    </body>
+</html>
