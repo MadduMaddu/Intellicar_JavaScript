@@ -55,6 +55,31 @@ console.log(arr.join());//it will give along with the ','
 console.log(arr.join(''));
 
 
+let str="Hello, Hi Everyone ,  How are you?";
+
+console.log(str.split(','));//[ 'Hello', ' Hi Everyone ', '  How are you?' ]
+
+console.log(str.split(' '));//[ 'Hello,', 'Hi', 'Everyone', ',', '', 'How', 'are', 'you?' ]
+console.log(str.split(""));
+// [
+//   'H', 'e', 'l', 'l', 'o', ',', ' ',
+//   'H', 'i', ' ', 'E', 'v', 'e', 'r',
+//   'y', 'o', 'n', 'e', ' ', ',', ' ',
+//   ' ', 'H', 'o', 'w', ' ', 'a', 'r',
+//   'e', ' ', 'y', 'o', 'u', '?'
+// ]
+
+//to remove commas we can use patterns as follows
+console.log(str.split(/,+/));//[ 'Hello', ' Hi Everyone ', '  How are you?' ]
+
+//here we getting space before ' How are you?' and after 'Hi Everyone '----to remove this 
+console.log(str.split(/\s*,+\s*/));//[ 'Hello', 'Hi Everyone', 'How are you?' ]
+
+//to create array with limited elements from the string
+console.log(str.split("",5));//[ 'H', 'e', 'l', 'l', 'o' ]
+
+
+
 
 
 
