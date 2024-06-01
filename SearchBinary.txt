@@ -1,0 +1,25 @@
+Definition:
+Binary search is an efficient algorithm for finding an item from a sorted list of items.
+It works by repeatedly dividing the search interval in half.
+
+Steps of Binary Search:
+
+Initialization: Set the initial boundaries of the search range (left and right).
+Midpoint Calculation: Find the midpoint of the current search range.
+Comparison:
+If the midpoint element is the target, return its index.
+If the target is less than the midpoint element, narrow the search to the left half.
+If the target is greater than the midpoint element, narrow the search to the right half.
+Repeat: Continue the process until the search range is empty.
+End Condition: If the target is not found, return an indicator (e.g., -1) to signify its absence.
+
+Time Complexity:
+
+Best Case: 𝑂(1) when the target is found at the midpoint on the first comparison.
+Average and Worst Case: 𝑂(log⁡𝑛) because the search space is halved with each iteration.
+
+Space Complexity:
+
+Space Complexity: 𝑂(1) for the iterative version, as it uses a constant amount of extra space.
+
+
