@@ -16,6 +16,11 @@ const bubblesort=arr=>{
 
 bubblesort(ar);
 console.log(ar);
+//here the complexity is based on the input so
+//Best Case:    O(n)
+//Average case: O(n^2)
+//Worst Case:   O(n^2)
+
 
 
 // 1st- [3,1,4,2,5,7,6,8,9]
