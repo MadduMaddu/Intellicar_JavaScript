@@ -1,0 +1,35 @@
+Selection Sort is a simple comparison-based sorting algorithm. Here's how the algorithm works:
+
+Iterate through the list to find the smallest element.
+Swap the smallest element with the first element of the list.
+Repeat the process starting from the next element.
+
+Time Complexity Analysis
+To calculate the time complexity of Selection Sort, 
+we need to count the number of comparisons and swaps made.
+
+Comparisons:
+
+In the first iteration, the inner loop runs n-1 times.
+In the second iteration, the inner loop runs n-2 times.
+This continues until the last iteration, where the inner loop runs 1 time.
+The total number of comparisons is the sum of the first 
+𝑛−1 
+n−1 integers:(𝑛−1)+(𝑛−2)+(𝑛−3)+…+1=((𝑛−1)⋅𝑛)/2
+Simplifying this, we get 
+                (𝑛^2−𝑛)/2 , which is 𝑂(𝑛2).
+
+Swaps:
+
+In each iteration of the outer loop, there is at most one swap.
+The outer loop runs n-1 times.
+The total number of swaps is 𝑛−1,which is 𝑂(𝑛).
+
+Best Case Time Complexity: 𝑂(𝑛2)
+Average Case Time Complexity: 𝑂(𝑛2)
+Worst Case Time Complexity: 𝑂(𝑛2)
+
+Space Complexity: 𝑂(1), (Selection Sort is an in-place sorting algorithm)
+
+
+
