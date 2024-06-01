@@ -1,0 +1,17 @@
+Definition:
+Insertion Sort is a simple comparison-based sorting algorithm that builds the 
+final sorted array one item at a time. It is much like the way you might sort playing cards in your hands.
+
+How It Works:
+Start with the second element (element at index 1) of the array as the key element.
+Compare the key element with the elements before it.
+Shift all elements greater than the key element one position to the right.
+Insert the key element at the correct position.
+Repeat the process for all elements in the array.
+
+Time Complexity
+Best Case: 𝑂(𝑛) - The array is already sorted.
+Average Case: 𝑂(𝑛2) - Each insertion involves a comparison with half of the already sorted portion.
+Worst Case: 𝑂(𝑛2) - The array is sorted in reverse order.
+
+Space Complexity: 𝑂(1) - Only a constant amount of extra space is required.
