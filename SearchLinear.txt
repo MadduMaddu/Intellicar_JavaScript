@@ -1,0 +1,17 @@
+Definition:
+Linear search is a straightforward searching algorithm that checks every element 
+in a list sequentially until the desired element is found or the list ends.
+
+Steps of Linear Search:
+
+Initialization: Start from the first element of the list.
+Comparison: Compare the current element with the target element.
+Match Check: If the current element matches the target, return the current index (or True).
+Continue: If the current element does not match the target, move to the next element.
+End of List: If the end of the list is reached and the target element has not been found, return -1 (or False).
+
+Time Complexity:
+Best Case: O(1)
+Average Case:O(n/2)
+Worst Case: O(n)
+

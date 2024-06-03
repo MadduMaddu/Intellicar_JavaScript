@@ -1,0 +1,18 @@
+Definition:
+Merge Sort is a divide-and-conquer algorithm that divides the input array into two halves,
+sorts each half, and then merges the sorted halves to produce the sorted array.
+
+How It Works
+Divide: Divide the unsorted array into two approximately equal halves.
+Conquer: Recursively sort both halves.
+Combine: Merge the two sorted halves to produce the final sorted array.
+
+Time Complexity
+Best Case: 𝑂(𝑛log⁡𝑛) - Array is divided into two halves in 𝑂(log⁡𝑛)
+                      and merging two halves takes 𝑂(𝑛).
+Average Case: 𝑂(𝑛log⁡𝑛)
+Worst Case: 𝑂(𝑛log⁡𝑛)
+
+Space Complexity
+Space Complexity: 𝑂(𝑛) - Requires temporary arrays for merging.
+
