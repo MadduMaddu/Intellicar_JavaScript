@@ -84,6 +84,17 @@ class SinglyLinkedList {
             current = current.next;
         }
     }
+    reverse(){
+        let prev=null;
+        let curr=this.head;
+        while(curr){
+            let next=curr.next;
+            curr.next=prev;
+            prev=curr;
+            curr=next;
+        }
+        this.head=prev;
+    }
 }
 const list = new SinglyLinkedList();
 list.insertAtEnd(1);
@@ -92,3 +103,9 @@ list.insertAtEnd(3);
 list.traverse(); // Output: 1 2 3
 list.deleteFromEnd();
 list.traverse(); // Output: 1 2
+list.insertAtEnd(3);
+list.insertAtEnd(4);
+list.traverse();
+list.reverse();
+console.log("---------------");
+list.traverse();
