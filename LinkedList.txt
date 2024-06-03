@@ -1,0 +1,50 @@
+### Definition
+
+A linked list is a linear data structure where elements, called nodes, are stored in separate objects.
+Each node contains two parts: data and a reference (or link) to the next node in the sequence.
+
+### Types of Linked Lists
+
+1. **Singly Linked List**: Each node points to the next node in the sequence.
+2. **Doubly Linked List**: Each node points to both the next and the previous node.
+3. **Circular Linked List**: The last node points back to the first node, forming a circle.
+
+### Basic Operations
+
+1. **Traversal**: Visiting each node in the list sequentially.
+    - Time complexity: O(n)
+2. **Insertion**:
+    - **At the beginning**: Update the new node's next reference to the current head, 
+        then update the head to the new node.
+        - Time complexity: O(1)
+    - **At the end**: Traverse to the last node, update its next reference to the new node.
+        - Time complexity: O(n)
+    - **At a given position**: Traverse to the node just before the desired position, adjust pointers 
+        accordingly.
+        - Time complexity: O(n)
+3. **Deletion**:
+    - **From the beginning**: Update the head to the next node.
+        - Time complexity: O(1)
+    - **From the end**: Traverse to the second-last node, update its next reference to null.
+        - Time complexity: O(n)
+    - **From a given position**: Traverse to the node just before the desired position, adjust 
+        pointers accordingly.
+        - Time complexity: O(n)
+4. **Searching**: Traverse through the list to find a node with the desired value.
+    - Time complexity: O(n)
+5. **Updating**: Traverse to the desired node and update its value.
+    - Time complexity: O(n)
+
+### Advantages
+
+- **Dynamic Size**: Linked lists can easily grow and shrink in size by adding or removing nodes.
+- **Ease of Insertion/Deletion**: Adding or removing nodes is straightforward, especially at the 
+    beginning or end of the list.
+
+### Disadvantages
+
+- **Memory Usage**: Linked lists use more memory due to the storage of references/pointers.
+- **Sequential Access**: Accessing elements requires traversing from the head, making random access 
+    inefficient (O(n) time complexity).
+- **Overhead of Pointers**: Additional memory is used to store pointers, which can be significant 
+    in large lists.
