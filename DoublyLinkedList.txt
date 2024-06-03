@@ -1,0 +1,33 @@
+Definition:
+
+A Doubly Linked List (DLL) is a type of linked list in which each node contains three parts:
+A data field to store the element.
+A reference (or pointer) to the next node in the sequence.
+A reference (or pointer) to the previous node in the sequence.
+Structure:
+
+Each node in a doubly linked list has two pointers:
+next: Points to the next node in the list.
+prev: Points to the previous node in the list.
+The list has two special nodes:
+head: The first node in the list.
+tail: The last node in the list.
+
+Advantages:
+Bidirectional Traversal: You can traverse the list in both directions, forward and backward.
+
+Disadvantages:
+Increased Memory Usage: Each node requires extra memory for the prev pointer.
+Complexity: The structure is more complex compared to a singly linked list.
+
+Basic Operations:
+Insertion:At the beginning: At the end: In the middle: 
+Deletion:From the beginning: From the end: From the middle: 
+Traversal: Forward Traversal: Backward Traversal: 
+
+Use Cases:
+Browser History: Navigating back and forth in the browser history.
+Undo and Redo Operations:
+Cache: Implementing Least Recently Used (LRU) cache where you need to quickly move 
+        elements to the front or back.
+
