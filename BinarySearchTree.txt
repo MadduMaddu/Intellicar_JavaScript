@@ -1,0 +1,78 @@
+# Tree:
+A tree is a hierarchical structure and Non-Linear data structure.
+where as Array ,Linkedlist and stack ,Queue are Linear data structure.
+
+The terms:
+Root Node, Leaf Node, Degree, Height, Edge, Siblings
+
+## Binary Search Tree:
+A tree Which contains at most Two children
+1—>the left child should contain the nodes less than the root node
+2—>the right child should contain the nodes greater than the root node.
+
+**Operations:**
+1.insertion
+2.searching
+3.deletion
+4.BFS & DFS
+
+**Binary Search Tree Usage:**
+1.Searching
+2.Sorting
+3.to-toimplement Abstract data types such as lookup tables and priority queues
+
+### Traversing Ways:
+1. Depth first search
+    1.1. Pre-order 
+    1.2. In-order
+    1.3. Post-order
+2. Breadth  First Search 
+
+### DFS:
+**Pre-Order Traversal:**
+1—>read the data of the root
+2—>visit the left sub-tree
+3—>visit the right sub-tree
+
+**In-Order Traversal:**
+1—>visit left sub-tree
+2—>read root data
+3—>visit right sub-tree
+
+**Post-Order Traversal:**
+1—>visit left sub-tree
+2—>visit right sub-tree
+3—>read root data
+
+### BFS:
+
+1—>create a Queue
+2—>enqueue the root node
+3—>as long as the node exist in the queue   
+    1. dequeue the node from the front
+    2. read the nodes value
+    3. enqueue the node’s left child if it exist
+    4. enqueue the node’s right child if it exist
+
+### Deletion:
+1—>deleting leaf node
+2—>deleting node which contain one child
+3—>deleting Intermediate node
+
+
+Search Operation:
+Best Case: 𝑂(1) - When the target element is at the root.
+Average Case: 𝑂(ℎ) - Where ℎ is the height of the tree.
+Worst Case: 𝑂(𝑛) - When the tree is skewed (all nodes are either to the left or right), 
+            making the height equal to the number of nodes.
+
+Insertion Operation:
+Best Case: 𝑂(1) - When inserting into an empty tree.
+Average Case: 𝑂(ℎ) - Inserting into a balanced tree.
+Worst Case: 𝑂(𝑛) - When inserting into a skewed tree.
+
+
+Deletion Operation:
+Best Case: 𝑂(1) - When deleting a leaf node in a balanced tree.
+Average Case: 𝑂(ℎ) - Deleting a node in a balanced tree.
+Worst Case: 𝑂(𝑛) - When deleting a node in a skewed tree.
